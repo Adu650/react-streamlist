@@ -1,25 +1,15 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
+  "name": "StreamList",
+  "short_name": "StreamList",
+  "description": "EZTechMovie — search, plan, and track movies/events.",
   "start_url": ".",
+  "scope": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#0b132b",
+  "theme_color": "#1c2541",
+  "icons": [
+    { "src": "/icons/icon_2.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/icons/icon_1.png", "type": "image/png", "sizes": "512x512" },
+    { "src": "/icons/maskable_icon.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" }
+  ]
 }

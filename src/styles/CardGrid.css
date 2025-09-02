@@ -1,0 +1,63 @@
+/* Generic responsive grid used by Events & Completed (and reusable elsewhere) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 16px;
+}
+
+/* Card look */
+.card {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  background: #fff;
+  padding: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Poster image (if present) */
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+/* Fallback if there’s no poster */
+.poster-fallback {
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  margin: 10px 0;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+/* Action buttons row */
+.event-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.event-actions button {
+  border: none;
+  background: #f4f4f5;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.05s ease, background 0.15s ease;
+}
+
+.event-actions button:hover {
+  background: #eaeaec;
+  transform: translateY(-1px);
+}
